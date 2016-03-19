@@ -15,7 +15,8 @@ var
 
 //************* BEGIN TWITTER API *****************************//
 
-var oauth2 = new OAuth2(process.env.TWITTER_API_KEY, process.env.TWITTER_API_SECRET, 'https://api.twitter.com/', null, 'oauth2/token', null);
+var oauth2 = new OAuth2('ErBfqSML7GNWWakJkqrnpKdqF','Tt776whQTC82rEMB7KFwzdOGzc9G7AX6FeywRhha2MT2LWpnj1'
+,'https://api.twitter.com/', null, 'oauth2/token', null);
 
 
 
@@ -81,8 +82,8 @@ api.get('/twitter/:id', function(req, res){
 //WATSON TESTING END//
 
 api.post('/watson', function(req, res){
-  // console.log("Triggered Waton API route.")
-  // console.log(req.body.text)
+  console.log("Triggered Waton API route.")
+  console.log(req.body.text)
   personality_insights.profile({ text: req.body.text },
   function (err, profile) {
     if (err) throw err

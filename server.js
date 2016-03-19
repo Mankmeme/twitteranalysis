@@ -16,11 +16,6 @@ var
   //commented out dotenv requirement for heroku deployment because .env variables are set via CLI to heroku directly
   favicon = require('serve-favicon'),
   watson = require('watson-developer-cloud'),
-  personality_insights = watson.personality_insights({
-  username: '{steven.magadan@hotmail.com}',
-  password: '{magadan312}',
-  version: 'v2'
-}),
   Profile = require('./models/Profile.js'),
   mainRoutes = require('./routes/main.js'),
   userRoutes = require('./routes/users.js'),
