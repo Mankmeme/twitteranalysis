@@ -699,6 +699,7 @@ function visualizeNeedsData(data) {
         .attr("stroke-width", "0.5")
         .attr("fill", "white")
 
+
         d3.select("#svgNeedsGraph")
            .append("text")
            .text("Needs")
@@ -732,6 +733,11 @@ function visualizeNeedsData(data) {
                  .attr("font-family", "sans-serif")
                  .attr("font-size", "14px")
                  .attr("fill", "black")
+                 .on('click', function(data) {
+                     $('#modal-header').text("Challenge")
+                     $('#modal-paragraph').text("something ​needing ​great ​mental or ​physical ​effort in ​order to be done ​successfully, or the ​situation of ​facing this ​kind of ​effort")
+                     $('#modal1').openModal()
+                   }
 
                d3.select("#svgNeedsGraph")
                   .append("text")
