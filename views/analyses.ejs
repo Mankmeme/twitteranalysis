@@ -735,7 +735,7 @@ function visualizeNeedsData(data) {
                  .attr("fill", "black")
                  .on('click', function(data) {
                      $('#modal-header').text("Challenge")
-                     $('#modal-paragraph').text("something ​needing ​great ​mental or ​physical ​effort in ​order to be done ​successfully, or the ​situation of ​facing this ​kind of ​effort")
+                     $('#modal-paragraph').text("Something ​needing ​great ​mental or ​physical ​effort in ​order to be done ​successfully, or the ​situation of ​facing this ​kind of ​effort")
                      $('#modal1').openModal()
                    })
 
@@ -750,6 +750,11 @@ function visualizeNeedsData(data) {
                   .attr("font-family", "sans-serif")
                   .attr("font-size", "14px")
                   .attr("fill", "black")
+                  .on('click', function(data) {
+                      $('#modal-header').text("Closeness")
+                      $('#modal-paragraph').text("The feeling of attachment and perceived connection toward another person or people.")
+                      $('#modal1').openModal()
+                    })
 
                 d3.select("#svgNeedsGraph")
                    .append("text")
@@ -762,6 +767,11 @@ function visualizeNeedsData(data) {
                    .attr("font-family", "sans-serif")
                    .attr("font-size", "14px")
                    .attr("fill", "black")
+                   .on('click', function(data) {
+                       $('#modal-header').text("Curiosity")
+                       $('#modal-paragraph').text("The desire to learn or know about anything; inquisitiveness.")
+                       $('#modal1').openModal()
+                     })
 
                  d3.select("#svgNeedsGraph")
                     .append("text")
@@ -774,6 +784,11 @@ function visualizeNeedsData(data) {
                     .attr("font-family", "sans-serif")
                     .attr("font-size", "14px")
                     .attr("fill", "black")
+                    .on('click', function(data) {
+                        $('#modal-header').text("Excitement")
+                        $('#modal-paragraph').text("An excited state or condition.")
+                        $('#modal1').openModal()
+                      })
 
                   d3.select("#svgNeedsGraph")
                      .append("text")
@@ -786,6 +801,11 @@ function visualizeNeedsData(data) {
                      .attr("font-family", "sans-serif")
                      .attr("font-size", "14px")
                      .attr("fill", "black")
+                     .on('click', function(data) {
+                         $('#modal-header').text("Harmony")
+                         $('#modal-paragraph').text("Harmony is usually identified as a human value, referring to compatibility and accord in feelings, actions, relationships, opinions, interests, etc. It denotes a state of balance among forces influencing and even opposing one another.")
+                         $('#modal1').openModal()
+                       })
 
                    d3.select("#svgNeedsGraph")
                       .append("text")
@@ -798,6 +818,11 @@ function visualizeNeedsData(data) {
                       .attr("font-family", "sans-serif")
                       .attr("font-size", "14px")
                       .attr("fill", "black")
+                      .on('click', function(data) {
+                          $('#modal-header').text("Ideal")
+                          $('#modal-paragraph').text("The ideal self is an idealized version of one's self created out of what they have learned from their life experiences, the demands of society, and what they admire in their role models.")
+                          $('#modal1').openModal()
+                        })
 
                       d3.select("#svgNeedsGraph")
                          .append("text")
@@ -810,6 +835,11 @@ function visualizeNeedsData(data) {
                          .attr("font-family", "sans-serif")
                          .attr("font-size", "14px")
                          .attr("fill", "black")
+                         .on('click', function(data) {
+                             $('#modal-header').text("Liberty")
+                             $('#modal-paragraph').text("The state of being free within society from oppressive restrictions imposed by authority on one's way of life, behavior, or political views.")
+                             $('#modal1').openModal()
+                           })
 
                        d3.select("#svgNeedsGraph")
                           .append("text")
@@ -822,6 +852,13 @@ function visualizeNeedsData(data) {
                           .attr("font-family", "sans-serif")
                           .attr("font-size", "14px")
                           .attr("fill", "black")
+                          .on('click', function(data) {
+                              $('#modal-header').text("Love")
+                              $('#modal-paragraph').text("Love is a variety of different feelings, states, and attitudes that ranges from interpersonal affection, to pleasure. It can refer to an emotion of a strong attraction and personal attachment.")
+                              $('#modal1').openModal()
+                            })
+
+
 
                         d3.select("#svgNeedsGraph")
                            .append("text")
@@ -834,6 +871,11 @@ function visualizeNeedsData(data) {
                            .attr("font-family", "sans-serif")
                            .attr("font-size", "14px")
                            .attr("fill", "black")
+                           .on('click', function(data) {
+                               $('#modal-header').text("Practicality")
+                               $('#modal-paragraph').text("The result of an experimental hands-on operating style that leads to specific learning.")
+                               $('#modal1').openModal()
+                             })
 
                          d3.select("#svgNeedsGraph")
                             .append("text")
@@ -846,6 +888,11 @@ function visualizeNeedsData(data) {
                             .attr("font-family", "sans-serif")
                             .attr("font-size", "14px")
                             .attr("fill", "black")
+                            .on('click', function(data) {
+                                $('#modal-header').text("Self Expression")
+                                $('#modal-paragraph').text("The expression or assertion of one's own personality, as in conversation, behavior, poetry, or painting.")
+                                $('#modal1').openModal()
+                              })
 
                           d3.select("#svgNeedsGraph")
                              .append("text")
@@ -858,6 +905,11 @@ function visualizeNeedsData(data) {
                              .attr("font-family", "sans-serif")
                              .attr("font-size", "14px")
                              .attr("fill", "black")
+                             .on('click', function(data) {
+                                 $('#modal-header').text("Stability")
+                                 $('#modal-paragraph').text("the quality or state of someone who is emotionally or mentally healthy.")
+                                 $('#modal1').openModal()
+                               })
 
                          d3.select("#svgNeedsGraph")
                             .append("text")
@@ -870,6 +922,11 @@ function visualizeNeedsData(data) {
                             .attr("font-family", "sans-serif")
                             .attr("font-size", "14px")
                             .attr("fill", "black")
+                            .on('click', function(data) {
+                                $('#modal-header').text("Structure")
+                                $('#modal-paragraph').text("The study of the elements of consciousness. The idea is that conscious experience can be broken down into basic conscious elements, much as a physical phenomenon can be viewed as consisting of chemical structures, that can in turn be broken down into basic elements.")
+                                $('#modal1').openModal()
+                              })
 
 
 }
