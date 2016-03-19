@@ -8,8 +8,8 @@ var
   Profile = require('../models/Profile.js'),
   watson = require('watson-developer-cloud'),
   personality_insights = watson.personality_insights({
-    username: 'steven',
-    password: 'magadan312',
+    username: 'a682d914-43c5-4292-bcbf-fa0f127da101',
+    password: 'jXQdclfPYh06',
     version: 'v2'
   });
 
