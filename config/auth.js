@@ -7,6 +7,6 @@ module.exports = {
     'callbackURL': 'https://watsonanalysis.herokuapp.com/auth/twitter/callback',
     'profileFields': ['emails', 'displayName']
     // 'callbackURL': 'http://127.0.0.1:3000/auth/twitter/callback'
-
+//callbacl!
   }
 }
