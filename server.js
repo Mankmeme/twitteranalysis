@@ -30,11 +30,11 @@ var
 
 
 // ENVIRONMENT PORT
-var port = process.env.PORT
+var port = process.env.PORT || 3000
 //
 
 // DATABASE
-var dbURL = 'mongodb://' + process.env.MLAB_USERNAME + ':' + process.env.MLAB_PASSWORD + '@ds023078.mlab.com:23078/heroku_v7560t60'
+var dbURL = process.env.MONGODB_URI || 'mongodb://localhost/watsonanalysis'
 // var dbURL = 'mongodb://localhost/project-3-reboot'
 
 mongoose.connect(dbURL, function(err){
