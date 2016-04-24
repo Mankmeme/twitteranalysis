@@ -26,7 +26,7 @@ var
 var port = process.env.PORT || 3000
 
 // DATABASE
-var dbURL = process.env.MONGOLAB_URI
+var dbURL = 'mongodb://Neardanger:magadan312@ds023078.mlab.com:23078/watson'
 // var dbURL = 'mongodb://localhost/project-3-reboot'
 
 mongoose.connect(dbURL, function(err){
