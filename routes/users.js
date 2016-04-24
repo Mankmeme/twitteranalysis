@@ -71,7 +71,7 @@ userRouter.get('/logout', function(req, res){
   res.redirect('/')
 })
 
-// Routes for logging in and out with Twitter
+// Route not needed, twitter does automatically
 
 userRouter.get('/auth/twitter', passport.authenticate('twitter'))
 
