@@ -20,13 +20,21 @@ var
   mainRoutes = require('./routes/main.js'),
   userRoutes = require('./routes/users.js'),
   apiRoutes = require('./routes/api.js'),
-  app = express()
+  path = require('path')
+
+  var app = express()
+
+  // var config = require('./config/config');
+  //
+  // require('./config/express')(app, config);
+
 
 // ENVIRONMENT PORT
-var port = process.env.PORT || 3000
+var port = process.env.PORT
+//
 
 // DATABASE
-var dbURL = 'mongodb://Neardanger:magadan312@ds023078.mlab.com:23078/watson'
+var dbURL = 'mongodb://' + process.env.MLAB_USERNAME + ':' + process.env.MLAB_PASSWORD + '@ds023078.mlab.com:23078/heroku_v7560t60'
 // var dbURL = 'mongodb://localhost/project-3-reboot'
 
 mongoose.connect(dbURL, function(err){
