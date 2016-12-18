@@ -53,7 +53,7 @@ app.use(cookieParser())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(session({
-  secret: "boomboom",
+  secret: "zzrot",
   cookie: {_expires: 6000000}
 }))
 app.use(passport.initialize())
